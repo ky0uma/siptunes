@@ -1,0 +1,8 @@
+.venv
+.env
+logs/
+_archive/
+app/__pycache__/
+sound/*
+!sound/dtmf_map_example.json
+!sound/example/

@@ -1,0 +1,11 @@
+services:
+  switchboard:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./.env:/workspace/.env
+      - ./logs:/workspace/logs
+      - ./sound:/workspace/sound
+    ports:
+      - "5060:5060"

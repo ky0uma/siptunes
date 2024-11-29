@@ -1,0 +1,26 @@
+{
+    "name": "Switchboard Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml", "../docker-compose.dev.yml"],
+    "service": "switchboard",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+        "extensions": [
+        "ms-python.python",
+        "esbenp.prettier-vscode"
+            ],
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "bash"
+        }
+    },
+    "forwardPorts": [5060],
+    "portsAttributes": {
+        "5060": {
+            "label": "SIP Signalling"
+        }
+        
+    },
+    "remoteUser": "vscode"
+
+    }
+}

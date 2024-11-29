@@ -1,0 +1,5 @@
+services:
+  switchboard:
+    volumes:
+      - .:/workspace
+    command: ["tail", "-f", "/dev/null"]
